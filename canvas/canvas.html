@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="600" height="600" style="border: 1px solid black"></canvas>
+
+    <script>
+        let c = document.getElementById("myCanvas");
+        let ctx = c.getContext("2d");
+
+        //cetverokut
+        ctx.beginPath();
+        ctx.rect(0, 0, 100, 200);
+        ctx.fillStyle = "purple";
+        ctx.fill();
+
+        //krug
+        ctx.beginPath();
+        ctx.arc(400, 500, 80, 0, 2* Math.PI);
+        ctx.stroke();
+
+        //trokut
+        ctx.beginPath();
+        ctx.moveTo(400, 150);
+        ctx.lineTo(500, 250);
+        ctx.lineTo(300, 250);
+        ctx.lineTo(400, 150);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(300, 250, 200, 150);
+        ctx.fillStyle = "blue";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.rect(350, 350, 100, 50);
+        ctx.fillStyle = "lightblue";
+        ctx.fill();
+
+
+    </script>
+</body>
+</html>
