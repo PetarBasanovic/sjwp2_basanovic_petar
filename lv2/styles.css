@@ -1,0 +1,47 @@
+body {
+font-family: Arial, sans-serif;
+margin: 2rem;
+}
+.gumb {
+padding: 12px 32px;
+font-size: 18px;
+color: #fff;
+background-color: #1f4e79;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.gumb:hover {
+background-color: #2e75b6;
+transform: scale(1.1);
+
+}
+.staza {   width: 500px; 
+  border: 1px solid #999; 
+} 
+  
+.kvadrat {   width: 100px;   height: 100px; 
+  background-color: #c0392b; 
+ animation: pomak 4s ease-in-out infinite alternate;  
+} 
+@keyframes pomak { 
+  0%   { transform: translateX(0);     background-color: #c0392b; } 
+  50%  { transform: translateX(200px); background-color: #f1c40f; }   100% { transform: translateX(400px); background-color: #27ae60; } 
+} 
+.kvadrat:hover { 
+  background-color: #2980b9; 
+} 
+
+
+
+
+
+
+
+
+
+
+@media (prefers-reduced-motion: reduce) { 
+  .kvadrat {     animation: none; 
+  } } 
