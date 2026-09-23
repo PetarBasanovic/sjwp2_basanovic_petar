@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>LV3 - Gotove animacije</title>
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<style>
+		/* LV3 - Gotove animacije
+		Ime i prezime:
+		Koristene biblioteke: Animate.css 4.1.1 (animate.style)
+		Preuzeti isjecci: navedeni uz kod */
+
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			color: #222;
+		}
+
+		.naslovnica {
+			padding: 60px 40px;
+			background-color: #1f4e79;
+			color: #fff;
+			text-align: center;
+		}
+
+		.poziv {
+			display: inline-block;
+			margin-top: 20px;
+			padding: 12px 32px;
+			color: #1f4e79;
+			background-color: #fff;
+			border-radius: 6px;
+			text-decoration: none;
+		}
+
+		.obavijest {
+			padding: 20px 40px;
+			border-bottom: 3px solid #1f4e79;
+		}
+
+		:root {
+			--animate-duration: 0.6s;
+			--animate-delay: 0.4s;
+		}
+
+		.naslov {
+			--animate-duration: 1.4s;
+		}
+
+		.poziv {
+			animation: puls-obavijesti 2s ease-in-out infinite;
+		}
+
+		.obavijest {
+			animation: puls-obavijesti 1.5s 1s 3;
+		}
+
+		@keyframes puls-obavijesti {
+			0% {
+				transform: scale(1);
+				box-shadow: 0 0 0 0 rgba(31,78,121,.7);
+			}
+
+			70% {
+				transform: scale(1.03);
+				box-shadow: 0 0 0 18px rgba(31,78,121,0);
+			}
+
+			100% {
+				transform: scale(1);
+				box-shadow: 0 0 0 0 rgba(31,78,121,0);
+			}
+		}
+	</style>
+
+	<body>
+		<header class="naslovnica">
+			<h1 class="naslov animate__animated animate__fadeInDown">
+				Tehnicka skola Slavonski Brod
+			</h1>
+
+			<p class="podnaslov animate__animated animate__fadeInUp animate__delay-2s">
+				Zanimanje: tehnicar za racunalstvo
+			</p>
+
+			<a class="poziv" href="#upisi">Saznaj vise</a>
+		</header>
+
+		<section class="obavijest">
+			<p>Upisi su otvoreni do 30. lipnja.</p>
+		</section>
+	</body>
+</html>
