@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad1</title>
+</head>
+<body>
+    <h1>rijesit pomocu svga ne canvasa</h1>
+    <canvas id="myCanvas" width="600" height="600" style="border: 10px solid black"></canvas>
+    <script>
+        let c = document.getElementById("myCanvas");
+        let ctx = c.getContext("2d");
+        //more
+        ctx.beginPath();
+        ctx.rect(0, 400, 600, 200);
+        ctx.fillStyle = "darkblue";
+        ctx.fill();
+        //nebo
+        ctx.beginPath();
+        ctx.rect(0, 0, 600, 400);
+        ctx.fillStyle = "lightblue";
+        ctx.fill();
+        //sunce
+        ctx.beginPath();
+        ctx.arc(500, 100, 80, 0, 2* Math.PI);
+        ctx.stroke();
+        ctx.fillStyle = "yellow";
+        ctx.fill();
+        //plank
+        ctx.beginPath();
+        ctx.rect(100, 375, 250, 50);
+        ctx.fillStyle = "brown";
+        ctx.fill();
+        //whitethingy
+        ctx.beginPath();
+        ctx.moveTo(225, 200);
+        ctx.lineTo(325, 350);
+        ctx.lineTo(125, 350);
+        ctx.lineTo(200, 250);
+        ctx.stroke();
+        ctx.fillStyle = "white";
+        ctx.fill();
+        //blackthingy
+        ctx.beginPath();
+        ctx.rect(215, 175, 17.5, 200);
+        ctx.fillStyle = "black";
+        ctx.fill();
+    </script>
+</body>
+</html>
