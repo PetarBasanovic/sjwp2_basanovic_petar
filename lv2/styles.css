@@ -33,7 +33,19 @@ transform: scale(1.1);
   background-color: #2980b9; 
 } 
 
+.krug { 
+  width: 60px; 
+  height: 60px; 
+  border: 6px solid lightgrey; 
+  border-top-color: #1f4e79; 
+  border-radius: 50%; 
+  animation: rotacija 1s linear infinite; 
+}
 
+@keyframes rotacija { 
+  0%   { transform: rotate(0deg); } 
+  100% { transform: rotate(360deg); } 
+} 
 
 
 
