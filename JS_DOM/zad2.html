@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .button{
+
+}
+</style>
+<body>
+    <h1>moja str</h1>
+
+    <p id="opis">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Explicabo, quas dolore eum molestias harum necessitatibus, velit dolorem doloremque nihil voluptatem 
+         quisquam quae ipsam amet. Delectus, fuga voluptatibus. Molestiae, numquam atque.
+    </p>
+
+    <button>press button</button>
+
+    <p id="paragraf2">
+        tekst 1
+    </p>
+    <p id="paragraf3">
+        tekst 2
+    </p>
+    <p id="paragraf4">
+        tekst 3
+    </p>
+
+    <script>
+        let paragraf1 = document.getElementById("opis");
+        paragraf1.textContent = "js sam crnac i idem u zatvor";
+        let naslov = document.querySelector("h1");
+        naslov.innerHTML = "DOM radi";
+        naslov.style.color = "magenta";
+        naslov.style.fontSize = "32px";
+        paragraf1.style.backgroundColor = "pink";
+        paragraf1.style.padding = "30px";
+        paragraf1.style.textAlign = "right";
+        let button = document.querySelector("button");
+        button.addEventListener("click", function(){
+            let paragraf1 = document.querySelector("#opis");
+            paragraf1.textContent = "you clicked the button";
+        })
+        let paragraf2 = document.querySelectorAll();
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>
