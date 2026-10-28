@@ -1,67 +1,28 @@
-/* stil.css - izgled obrasca */
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prijava zaprimljena</title>
+  <link rel="stylesheet" href="./stil.css">
+</head>
+<body>
 
-*, *::before, *::after { box-sizing: border-box; }
+  <header class="zaglavlje">
+    <h1>Prijava je zaprimljena</h1>
+    <p>Hvala na prijavi.</p>
+  </header>
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #222;
-}
+  <main class="omotac">
+    <p>
+      Ova stranica samo potvrđuje da je obrazac poslan.
+      Pogledaj adresnu traku i alate za razvojne programere.
+    </p>
 
-.zaglavlje {
-  padding: 2rem 1rem;
-  background-color: #1f4e79;
-  color: #fff;
-  text-align: center;
-}
+    <p>
+      <a href="./prijava (1).html">Natrag na obrazac</a>
+    </p>
+  </main>
 
-.zaglavlje h1 { margin: 0 0 0.25rem; font-size: 1.75rem; }
-.zaglavlje p  { margin: 0; }
-
-.omotac {
-  width: 100%;
-  max-width: 34rem;
-  margin: 0 auto;
-  padding: 1.5rem 1rem;
-}
-
-.obrazac {
-  padding: 1.25rem;
-  background-color: #f4f6f8;
-  border-left: 4px solid #1f4e79;
-}
-
-.polje { margin: 0 0 1rem; }
-
-.polje label {
-  display: block;
-  margin-bottom: 0.25rem;
-  font-weight: bold;
-  color: #17365d;
-}
-
-.polje input,
-.polje select,
-.polje textarea {
-  width: 100%;
-  padding: 0.5rem;
-  font: inherit;
-  border: 1px solid #aab;
-  border-radius: 4px;
-}
-
-.polje button {
-  padding: 0.625rem 1.5rem;
-  font: inherit;
-  font-weight: bold;
-  color: #fff;
-  background-color: #1f4e79;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.polje button:hover,
-.polje button:focus-visible { background-color: #2e75b6; }
+</body>
+</html>
