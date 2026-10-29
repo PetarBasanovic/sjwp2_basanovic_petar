@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>button</title>
+  </head>
+  <body>
+    <p id="opis">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <button>press button</button>
+
+    <script>
+      let button = document.querySelector("button");
+
+      button.addEventListener("click", function () {
+        let paragraf1 = document.querySelector("#opis");
+        paragraf1.textContent = "you clicked the button";
+      });
+    </script>
+  </body>
+</html>

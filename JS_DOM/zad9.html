@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sakrij odlomak</title>
+  </head>
+  <body>
+    <p id="odlomak">ts random text</p>
+
+    <button id="gumb">hide/show</button>
+
+    <script>
+      let gumb = document.querySelector("#gumb");
+      let odlomak = document.querySelector("#odlomak");
+
+      gumb.addEventListener("click", function () {
+        if (odlomak.style.display === "none") {
+          odlomak.style.display = "block";
+        } else {
+          odlomak.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

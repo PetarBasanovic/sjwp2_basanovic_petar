@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kartica</title>
+
+    <style>
+      .kartica {
+        padding: 20px;
+        border: 1px solid gray;
+        width: 250px;
+        margin-bottom: 10px;
+      }
+
+      .istaknuto {
+        background-color: rgb(230, 87, 194);
+        color: rgb(189, 30, 221);
+        font-weight: bold;
+        border: 2px solid rgb(219, 200, 26);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kartica" id="kartica">
+      <h3>Moja kartica</h3>
+      <p>Ovo je sadržaj kartice.</p>
+    </div>
+
+    <button id="gumb">Istakni karticu</button>
+
+    <script>
+      let gumb = document.querySelector("#gumb");
+      let kartica = document.querySelector(".kartica");
+
+      gumb.addEventListener("click", function () {
+        kartica.classList.toggle("istaknuto");
+      });
+    </script>
+  </body>
+</html>

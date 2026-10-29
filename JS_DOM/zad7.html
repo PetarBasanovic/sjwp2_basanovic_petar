@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Upozorenje</title>
+  </head>
+  <body>
+    <p id="upozorenje">warning</p>
+
+    <button id="gumb">click me mf</button>
+
+    <script>
+      let gumb = document.querySelector("#gumb");
+
+      gumb.addEventListener("click", function () {
+        let upozorenje = document.querySelector("#upozorenje");
+
+        upozorenje.textContent = "PAŽNJA! Ovo je važno upozorenje!";
+        upozorenje.style.color = "purple";
+        upozorenje.style.fontWeight = "bold";
+        upozorenje.style.backgroundColor = "pink";
+      });
+    </script>
+  </body>
+</html>

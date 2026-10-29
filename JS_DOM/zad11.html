@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Promjena poveznice</title>
+  </head>
+  <body>
+    <a id="poveznica" href="https://www.google.com"> Otvori Google </a>
+
+    <br /><br />
+
+    <button id="gumb">Promijeni poveznicu</button>
+
+    <script>
+      let poveznica = document.querySelector("#poveznica");
+      let gumb = document.querySelector("#gumb");
+
+      gumb.addEventListener("click", function () {
+        poveznica.href = "https://www.youtube.com";
+        poveznica.textContent = "Otvori YouTube";
+      });
+    </script>
+  </body>
+</html>
