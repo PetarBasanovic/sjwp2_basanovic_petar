@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prijava na izlet</title>
+  <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+
+  <header class="zaglavlje">
+    <h1>Prijava na stručni izlet</h1>
+    <p>Tehnička škola Slavonski Brod</p>
+  </header>
+
+  <main class="omotac">
+
+    <form class="obrazac" action="primljeno.html" method="get">
+
+      <p class="polje">
+        <label for="ime">Ime i prezime</label>
+        <input type="text" id="ime" name="ime" required maxlength="40">
+      </p>
+
+      <p class="polje">
+        <label for="eposta">E-pošta</label>
+        <input type="email" id="eposta" name="eposta" required>
+      </p>
+
+      <p class="polje">
+        <label for="napomena">Napomena organizatoru</label>
+        <textarea id="napomena" name="napomena" rows="4"
+                  value="Ovdje upisite napomenu."></textarea>
+      </p>
+
+      <p class="polje">
+        <button type="submit">Pošalji prijavu</button>
+      </p>
+
+    </form>
+
+  </main>
+
+</body>
+</html>
