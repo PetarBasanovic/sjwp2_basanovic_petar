@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    element.addEventListener("naziv-događaja", funkcija); const gumb =
+    document.getElementById("pozdrav"); function pozdravi() { alert("Pozdrav!");
+    } gumb.addEventListener("click", pozdravi);
+    <button id="brojac">Klikni me</button>
+
+    <p id="ispis">Broj klikova: 0</p>
+
+    let broj = 0; const gumb = document.getElementById("brojac"); const ispis =
+    document.getElementById("ispis"); gumb.addEventListener("click", function ()
+    { broj++; ispis.textContent = "Broj klikova: " + broj; }); 05 function
+    prikaziPoruku() { console.log("Dogodio se klik."); } // Ispravno – funkcija
+    se poziva tek na klik: gumb.addEventListener("click", prikaziPoruku); //
+    Pogrešno – funkcija se izvršava odmah: gumb.addEventListener("click",
+    prikaziPoruku()); gumb.addEventListener("click", function () {
+    console.log("Klik!"); }); // Isti primjer pomoću arrow funkcije:
+    gumb.addEventListener("click", () => { console.log("Klik!"); }); // Ako
+    imamo samo jednu naredbu: gumb.addEventListener("click", () =>
+    console.log("Klik!"));
+  </body>
+</html>
